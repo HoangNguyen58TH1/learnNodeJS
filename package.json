@@ -1,0 +1,26 @@
+{
+  "name": "learnnodejs",
+  "version": "1.0.0",
+  "description": "learning NodeJS basic.",
+  "main": "UrlModule.js",
+  "dependencies": {
+    "formidable": "^1.2.2",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.4.8",
+    "upper-case": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HoangNguyen58TH1/learnNodeJS.git"
+  },
+  "author": "HoangNguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HoangNguyen58TH1/learnNodeJS/issues"
+  },
+  "homepage": "https://github.com/HoangNguyen58TH1/learnNodeJS#readme"
+}

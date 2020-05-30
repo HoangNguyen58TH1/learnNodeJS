@@ -1,4 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+var nodemailer = require('nodemailer');
+
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'hoangnv20081998@gmail.com',
+    pass: 'hoangtoni11'
+  }
+});
+// console.log(transporter);
+// console.log(typeof transporter);
+
+var mailOptions = {
+  from: 'hoangnv20081998@gmail.com',
+  to: 'hoangnv20081998@gmail.com, hoangtoni11@icloud.com, hoang.nv.58cntt@ntu.edu.vn',
+  subject: 'Sending Email using Node.js by HoangNguyen title test multiple email',
+  // text: 'Tôi sẽ là người giỏi nhất ...! descriptions ...'
+  html: `
+  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
     xmlns:o="urn:schemas-microsoft-com:office:office">
 
@@ -806,3 +824,13 @@
 </body>
 
 </html>
+  `
+};
+
+transporter.sendMail(mailOptions, function (error, info) {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  }
+});
