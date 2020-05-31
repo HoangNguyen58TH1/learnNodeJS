@@ -10,19 +10,28 @@ var  tranporter = nodemailer.createTransport({
 
 var content = {
   from: 'hoangnv20081998@gmail.com',
-  to: 'hoangnv20081998@gmail.com, hoang.nv.58cntt@ntu.edu.vn',
-  subject: 'subject title ne 222',
-  text: 'text description content ne 222',
+  to: 'hoang.nv.58cntt@ntu.edu.vn',
+  subject: 'CV PDF',
+  text: 'My Info in PDF',
   attachments: [
+    // {
+    //   path: 'myInfo-NVH.docx'
+    // },
+    // {
+    //   path: 'readfile.html'
+    // },
+    // {
+    //   path: 'image/Hoang.jpg'
+    // },
+    // {
+    //   path: 'wordFile/CV.docx'
+    // },
+    // {
+    //   path: 'wordFile/myInfo-NVH.docx'
+    // },
     {
-      path: 'myInfo-NVH.docx'
+      path: 'CV.pdf'
     },
-    {
-      path: 'filenew.txt'
-    },
-    {
-      path: 'image/Hoang.jpg'
-    }
   ]
 }
 
